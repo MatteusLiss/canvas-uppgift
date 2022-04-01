@@ -20,6 +20,45 @@ Höjd på canvas: ${canvas.height}`
 );
 
 function drawPicture() {
-  // Här skriver du funktionen som ritar bilden
+c.beginPath();
+c.rect(35, 450, 330, 150);
+c.stroke()
+
+c.beginPath();
+c.rect(915, 450, 330, 150);
+c.stroke()
+
+c.beginPath();
+c.moveTo(35, 450);
+c.lineTo(200, 200);
+c.stroke();
+
+c.beginPath();
+c.moveTo(365, 450);
+c.lineTo(200, 200);
+c.stroke();
+
+c.beginPath();
+c.moveTo(915, 450);
+c.lineTo(1075, 200);
+c.stroke();
+
+c.beginPath();
+c.moveTo(1245, 450);
+c.lineTo(1075, 200);
+c.stroke();
+
+c.fillStyle = "brown"
+c.beginPath();
+c.rect(610, 450, 40, 200);
+c.stroke();
+c.fill();
+
+c.fillStyle = "green";
+c.beginPath();
+c.ellipse(630, 350, 125, 50, Math.PI / 2, 0.6, 1.81 * Math.PI);
+c.stroke();
+c.fill();
+
 }
 drawPicture();
